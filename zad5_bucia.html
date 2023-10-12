@@ -1,0 +1,49 @@
+<style>
+    .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+  }
+
+
+  .center form .close-button {
+    margin-top: 10px; 
+  }
+    </style>
+<script language="JavaScript">
+function WinOpen()
+{
+window.open("obraz1.png","okienko_1","toolbar=no,directories=no,menubar=no,height=300,width=300,top=700,left=200");
+}
+function WinOpen_z1()
+{
+window.open("obraz2.png","okienko_2","toolbar=no,directories=no,menubar=no,height=300,width=300,top=400,left=700");
+}
+function WinOpen_z2()
+{
+window.open("obraz3.png","okienko_3","toolbar=no,directories=no,menubar=no,height=300,width=300,top=250,left=980");
+}
+function WinOpen_z3()
+{
+window.open("obraz4.png","okienko_4","toolbar=no,directories=no,menubar=no,height=300,width=300,top=100,left=1200");
+}
+function okno_zamknij()
+{
+window.close()
+}
+
+</script>
+</head>
+<body>
+    <div class="center">
+    <font size="10"> <p align="center"> Wykonał:Jan Bucia mój numer w dzienniku to 7, czyli mam układ 4 </font> </p> <br>
+<form>
+<input type="button" name="zadanie1" value="Grafika 1" onclick="WinOpen(' ')">
+<input type="button" name="Zadanie2" value="Grafika 2" onclick="WinOpen_z1(' ')">
+<input type="button" name="Zadanie3" value="Grafika 3" onclick="WinOpen_z2(' ')">
+<input type="button" name="zadanie4" value="Grafika 4" onclick="WinOpen_z3(' ')"> <br>
+<p align="center"><input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+
+</form>
