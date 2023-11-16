@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div style="color:red; font-size:50px;">
+        <script>
+            var liczba1 = prompt("Podaj a:", "");
+            var a_buc = parseFloat(liczba1);
+            var liczba2 = prompt("Podaj b:", "");
+            var b_buc = parseFloat(liczba2);
+            var a1 = a_buc * a_buc * a_buc;
+            var ab1 = 3 * a_buc * a_buc * b_buc;
+            var ab2 = 3 * a_buc * b_buc * b_buc;
+            var b1 = b_buc * b_buc * b_buc;
+            var wynik = a1 + ab1 + ab2 + b1;
+            document.write("a=" + a_buc + "<br>");
+            document.write("b=" + b_buc + "<br>");
+            document.write("(" + a_buc + " + " + b_buc + ")^3 = ");
+            document.write(a_buc + "^3 + 3*" + a_buc + "^2*" + b_buc + " + 3*" + a_buc + "*" + b_buc + "^2 + " + b_buc + "^3 = ");
+            document.write(a1 + " + " + ab1 + " + " + ab2 + " + " + b1 + " = ");
+            document.write(wynik);
+        </script>
+    </div>
+</body>
+</html>
