@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Proste obliczenia</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div style="color:green; font-size:37px;">
+    <script language="JavaScript">
+      var liczba1 = prompt("D1=");
+      var liczba2 = prompt("D2=");
+      var liczba3 = prompt("G1=");
+      var liczba4 = prompt("G2=");
+      var D1_buc = parseFloat(liczba1);
+      var D2_buc = parseFloat(liczba2);
+      var G1_buc = parseFloat(liczba3);
+      var G2_buc = parseFloat(liczba4);
+      var roznica_dni = D2_buc - D1_buc;
+      var roznica_godzin = G2_buc - G1_buc;
+      var ile_sekund_buc = (roznica_dni * 24 * 60 * 60) + (roznica_godzin * 60 * 60);
+      document.write("D1="+D1_buc+"D2="+D2_buc+"G1="+G1_buc+"G2="+G2_buc+"<br>");
+      document.write("Liczba sekund, które upłynęły: " + ile_sekund_buc + "<br>");
+    </script>
+  </div>
+</body>
+</html>
