@@ -1,0 +1,42 @@
+<html>
+<head>
+<script type="text/javascript">
+var mebel = {
+  wysokosc: '100cm',
+  szerokosc: '80cm',
+  z_czego_wykonane: 'drewno',
+  pokaz: function() {
+    document.write('Rozmiar: ' + this.wysokosc + 'x' + this.szerokosc + '<br>Z czego wykonane: ' + this.z_czego_wykonane);
+  }
+}
+mebel.pokaz();
+mebel.co_to = "szafka";
+mebel.wypisz = function() {
+  alert('Co to: ' + this.co_to);
+}
+mebel.wypisz();
+function klient(imie_klienta, nazwisko_klienta, pesel_klienta, login_klienta) {
+  this.imie = imie_klienta;
+  this.nazwisko = nazwisko_klienta;
+  this.pesel = pesel_klienta;
+  this.login = login_klienta;
+}
+klient.prototype.wypisz = function() {
+  alert(this.imie + ' ' + this.nazwisko + ' ' + this.pesel + ' ' + this.login);
+};
+var klient1 = new klient('Paweł', 'Kowalski', '01121278154', 'kowal_89');
+var klient2 = new klient('Jan', 'Nowak', '80050787116', 'nowaczek_15');
+var klient3 = new klient('Kamil', 'Lewandowski', '76110154332', 'kamilek_17');
+klient1.wypisz();
+klient2.wypisz();
+klient3.wypisz();
+document.write("<br>Dostęp do właściwości:" + "<br>");
+document.write("<br>Klient pierwszy:" + " " + klient1.imie + " " + klient1.nazwisko + " " + klient1.pesel, " " + klient1.login);
+document.write("<br>Klient drugi:" + " " + klient2.imie + " " + klient2.nazwisko + " " + klient2.pesel, " " + klient2.login);
+document.write("<br>Klient trzeci:" + " " + klient3.imie + " " + klient3.nazwisko + " " + klient3.pesel, " " + klient3.login);
+</script>
+</head>
+<br>
+Programowanie obiektowe- Jan Bucia 3Gg1
+</body>
+</html>
