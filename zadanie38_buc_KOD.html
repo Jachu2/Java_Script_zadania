@@ -1,0 +1,40 @@
+<TD><br><b>Kod:</b><br> <textarea cols="60" rows="20">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proste obliczenia</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script language="JavaScript">
+        document.write ("<p style=\"font-size: 40.px; color: green;\"><br>Moje nazwisko to: Jan Bucia<br>liczba1 = 3<br>liczba2 = 3 + 7 = 10<br>liczba3 = 5<br>liczba4 = 5 + 4 = 9</p>");
+        document.write ("<p style=\"font-size: 40.px; color: red;\"><br>----------MENU----------<br>3-wyświetlanie teorii o operatorach<br>25- czy liczba należy do przedziału (12; 19]<br>79- czy liczba należy do przedziału(-oo; ; 10) lub [14 ; +oo)</p>");
+        var podaj_opcję = prompt("Podaj opcję:", "");
+var podaj_buc = parseFloat(podaj_opcję);
+if (podaj_buc === 3) {
+    document.write("<p style=\"font-size: 40.px; color: green;\">Jesteś w opcja 3 --> teoria<br><p style=\"font-size: 40.px; color: blue;\">&& i x=3 y=4 (x < 9 && y > 2) wynik -->prawda</p>");
+} else if (podaj_buc === 25) {
+    var liczba = prompt("Podaj liczbę do sprawdzenia:", "");
+    var liczbaSprawdzenie = parseFloat(liczba);
+    if (liczbaSprawdzenie > 12 && liczbaSprawdzenie <= 19) {
+        document.write("<p>Liczba " + liczbaSprawdzenie + " należy do przedziału (12; 19]</p>");
+    } else {
+        document.write("<p>Liczba " + liczbaSprawdzenie + " nie należy do przedziału (12; 19]</p>");
+    }
+} else if (podaj_buc === 79) {
+    var liczba = prompt("Podaj liczbę do sprawdzenia:", "");
+    var liczbaSprawdzenie = parseFloat(liczba);
+    if ((liczbaSprawdzenie > -Infinity && liczbaSprawdzenie < 10) || (liczbaSprawdzenie >= 14 && liczbaSprawdzenie <= Infinity)) {
+        document.write("<p>Liczba " + liczbaSprawdzenie + " należy do przedziału (-oo; ; 10) lub [14 ; +oo)</p>");
+    } else {
+        document.write("<p>Liczba " + liczbaSprawdzenie + " nie należy do przedziału (-oo; ; 10) lub [14 ; +oo)</p>");
+    }
+} else {
+    document.write("<p>Nie ma takiej opcji</p>");
+}
+
+    </script>
+</body>
+</html>
+</textarea>
+</TD>

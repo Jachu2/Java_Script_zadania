@@ -1,0 +1,27 @@
+<TD><br><b>Kod:</b><br> <textarea cols="60" rows="20">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button Example</title>
+</head>
+<body>
+  <div>
+    <h1 style="color:green; font-size:10;">Menu:</h1>
+    <h1 style="color:blue; font-size:7;">1- niebieski</h1>
+    <h1 style="color:red; font-size:7;">2- czerwony</h1>
+  </div>
+  <input type="button" name="bucia" value="Oblicz" onclick="funkcja_buc()" />
+  <script>
+    function funkcja_buc() {
+      var opcja_dana_buc = prompt("Podaj kolor:", "");
+      if (opcja_dana_buc == 1 || opcja_dana_buc.toLowerCase() == "niebieski") {
+        document.write('<h6 style="color:blue; font-size:1;">Wczytano kolor niebieski</h6><br />');
+      } else if (opcja_dana_buc == 2 || opcja_dana_buc.toLowerCase() == "czerwony") {
+        document.write('<h1 style="color:red; font-size:7;">Wczytano kolor czerwony</h1><br />');
+      }
+    }
+  </script>
+</body>
+</html>
+</textarea>
+</TD>
