@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head> 
+ <meta charset="utf-8">
+ <title> Własności liczby </title>
+</head>
+<body>
+<div>
+ <script language="JavaScript">
+var x_buc=prompt("Podaj pierwszą liczbę=","");
+var liczba1_buc=parseInt(x_buc);
+var y_buc=prompt("Podaj drugą liczbę=","");
+var liczba2_buc=parseInt(y_buc);
+if(liczba1_buc < liczba2_buc){
+  document.write("<p style=\"font-size:50px; color: green;\">Liczby nieparzyste od "+liczba1_buc+" do "+liczba2_buc+":<br>");
+  for(var i_buc=liczba1_buc;i_buc<=liczba2_buc;i_buc++){
+    if(i_buc%2==1){
+      document.write(i_buc+"<br>");
+    }
+  }
+}
+if(liczba1_buc > liczba2_buc){
+  document.write("<p style=\"font-size:25px; color: blue;\">Liczby nieparzyste od "+liczba1_buc+" do "+liczba2_buc+":<br>");
+  for(var i_buc=liczba1_buc;i_buc>=liczba2_buc;i_buc--){
+    if(i_buc%2==1){
+      document.write(i_buc+"<br>");
+    }
+  }
+}
+if(liczba1_buc==liczba2_buc){
+  confirm("Brak obliczeń");
+  document.write("Uruchom zadanie ponownie");
+}
+ </script>
+</div>
+</body> 
+</html>

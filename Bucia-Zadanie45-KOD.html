@@ -1,0 +1,30 @@
+<TD><br><b>Kod:</b><br> <textarea cols="60" rows="20">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jan Bucia 3G</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div style="color:red; font-size:50px;">
+    <script language="JavaScript">
+      var wczytanaLiczba = prompt("Podaj liczbę:");
+      var ile_razy_wyświetlić_buc = 11;
+      var wielkość_liter_buc = 42;
+      document.write("Ilość wykonania pętli = " + ile_razy_wyświetlić_buc + "<br>");  
+      document.write("Wielkość liter = " + wielkość_liter_buc + "px" + "<br>");
+      if (wczytanaLiczba % 2 === 0) {
+        for (i_buc = 0; i_buc < ile_razy_wyświetlić_buc; i_buc++) {
+          document.write('<font color="blue" style="font-size: ' + wielkość_liter_buc + 'px;">Bucia</font><br>');
+        }
+      } else {
+        for (i = 0; i < ile_razy_wyświetlić_buc; i++) {
+          document.write('<font color="green" style="font-size: ' + wielkość_liter_buc + 'px;">Jan</font><br>');
+        }
+      }
+    </script>
+  </div>
+</body>
+</html>
+</textarea>
+</TD>

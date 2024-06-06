@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head> 
+ <meta charset="utf-8">
+ <title> Przykład użycia pętli </title>
+</head>
+<body>
+<script language="JavaScript">
+var l1_t_buc;
+do {
+  var x = prompt("podaj liczbe 1=", "");
+  l1_t_buc = parseFloat(x);
+  if (l1_t_buc > 60 || l1_t_buc < 20) {
+    alert("liczba 1 nie należy do przedziału <20,60>");
+  }
+} while (l1_t_buc > 60 || l1_t_buc < 20);
+
+var l2_t_buc;
+do {
+  var y = prompt("podaj liczbe 2=", "");
+  l2_t_buc = parseFloat(y);
+  if (l2_t_buc > 60 || l2_t_buc < 20) {
+    alert("liczba 2 nie należy do przedziału <20,60>");
+  }
+} while (l2_t_buc > 60 || l2_t_buc < 20);
+
+var pocz_buc;
+do {
+  var z = prompt("podaj wielkość początkową tekstu=", "");
+  pocz_buc = parseFloat(z);
+  if (pocz_buc < 0) {
+    alert("liczba początkowa nie może być mniejsza od 0");
+  }
+} while (pocz_buc < 0);
+
+var tekst_buc = prompt("podaj tekst=", "");
+var i = pocz_buc;
+
+if (l1_t_buc > l2_t_buc) {
+  for (i; i <= 100; i = i + 5) {
+    document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_buc + "<br></p>");
+  }
+} else if (l1_t_buc == l2_t_buc) {
+  document.write("<p style=\"font-size:" + pocz_buc + "px; color: black;\"><br>" + tekst_buc + "<br></p>");
+} else {
+  for (i; i >= 1; i = i - 5) {
+    document.write("<p style=\"font-size:" + i + "px; color: black;\"><br>" + tekst_buc + "<br></p>");
+  }
+}
+</script>
+</body>
+</html>

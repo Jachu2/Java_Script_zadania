@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jan Bucia 3G</title>
+</head>
+<body>
+    <div style="color:red;font-size:50px;">
+        <script language="JavaScript">
+            var liczba1_buc = prompt("Podaj pierwszą liczbę:");
+            var liczba2_buc = prompt("Podaj drugą liczbę:");
+            var a_buc = (liczba1_buc.length % 4) + 5;
+            var b_buc = (liczba2_buc.length % 6) + 20;
+            for (var i_buc = 0; i_buc < b_buc + 2; i_buc++) {
+                document.write("*");
+            }
+            document.write("<br>");
+            for (var i_buc = 0; i_buc < a_buc; i_buc++) {
+                document.write("*");
+                for (var k_buc = 0; k_buc < b_buc; k_buc++) {
+                    document.write("&nbsp;&nbsp;");
+                }
+                document.write("*<br>");
+            }
+            for (var i_buc = 0; i_buc < b_buc + 2; i_buc++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        </script>
+    </div>
+</body>
+</html>

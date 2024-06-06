@@ -1,0 +1,32 @@
+<TD><br><b>Kod:</b><br> <textarea cols="60" rows="20">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jan Bucia 3G</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div style="color:red; font-size:50px;">
+    <script language="JavaScript">
+var a_buc, b_buc, c_buc;
+do {
+    a_buc = parseFloat(prompt("Podaj długość boku a:"));
+    b_buc = parseFloat(prompt("Podaj długość boku b:"));
+    c_buc = parseFloat(prompt("Podaj długość boku c:"));
+
+    while (!(a_buc > 0 && b_buc > 0 && c_buc > 0 && a_buc + b_buc > c_buc && a_buc + c_buc > b_buc && c_buc + b_buc > a_buc)) {
+        alert("Podane wartości nie tworzą trójkąta. Podaj inne liczby.");
+
+        a_buc = parseFloat(prompt("Podaj długość boku a:"));
+        b_buc = parseFloat(prompt("Podaj długość boku b:"));
+        c_buc = parseFloat(prompt("Podaj długość boku c:"));
+    }
+    document.write("Podane wartości tworzą trójkąt.");
+} while (false);
+</script>
+
+  </div>
+</body>
+</html>
+</textarea>
+</TD>

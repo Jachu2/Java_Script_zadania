@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sprawdzenie danych Twoje nazwisko</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div style="color:red;font-size:50px;">
+    <script language="JavaScript">
+      do {
+        var liczba1 = prompt("Podaj wysokość=", "");
+        var h_buc = parseFloat(liczba1);
+      } while (h_buc <= 0);
+      do {
+        var liczba2 = prompt("Podaj podstawę=", "");
+        var a_buc = parseFloat(liczba2);
+      } while (!(a_buc > 0));
+      var Pole = a_buc * h_buc / 2;
+      document.write("Pole=" + Pole.toFixed(2) + " cm^2" + "<br>");
+    </script>
+  </div>
+</body>
+</html>
